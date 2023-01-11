@@ -16,7 +16,6 @@
     // includo file helper.php contente logica:
     require_once __DIR__ . "/partials/helper.php";
     ?>
-
 </head>
 
 <body>

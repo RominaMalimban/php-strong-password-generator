@@ -22,7 +22,6 @@
         </span>
 
         <a href="index.php">Genera nuova password</a>
-
     </div>
 </body>
 

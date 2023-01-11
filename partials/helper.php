@@ -1,5 +1,4 @@
 <?php
-
 // scelta utente: 
 $length = $_GET['pwd-length'] ?? 0;
 
