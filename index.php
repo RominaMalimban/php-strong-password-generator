@@ -7,8 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Php Strong Password Generator</title>
 
-    <!-- includo file helper.php contente logica -->
+
     <?php
+
+    // inizializzo la session:
+    session_start();
+
+    // includo file helper.php contente logica:
     require_once __DIR__ . "/partials/helper.php";
     ?>
 
@@ -21,9 +26,14 @@
         <input type="submit" value="Genera">
     </form>
 
-    <span>La password generata è:
-        <?php echo generateRanPwd($length) ?>
-    </span>
+    <?php
+
+    if ($length) {
+
+        $_SESSION['pwd'] = generateRanPwd($length);
+        header('Location: pwdGenerated.php');
+    }
+    ?>
 </body>
 
 </html>
